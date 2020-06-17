@@ -51,8 +51,8 @@ class login extends Component {
                         {/* submit button will take us to the home page */}
                         <button type="submit"
                             className="btn btn-primary btn-block"
-                            onClick={() =>{
-                                this.props.checkuser(this.state.email,this.state.pass)}}
+                            onClick={(event) =>{
+                                this.props.checkuser(this.state.email,this.state.pass,event)}}
                             >Submit
                             </button>
 

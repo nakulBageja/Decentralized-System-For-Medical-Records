@@ -13,10 +13,10 @@ class Home extends Component {
     //welcome message  
     name = "Nakul"
 
-    async onSubmitHandler() {
-        
+    async onSubmitHandler(event) {
+        event.preventDefault()
         console.log("submitting")
-        await GeneratePDF('naku l')
+        await GeneratePDF("Nakul","22","MALE","STUDENT","120/79","80","70","text")
         return history.push('/home/doctorsform')
     }
 
@@ -28,37 +28,81 @@ class Home extends Component {
             <div>
                 {/* navbar */}
                 <NavBar name="nakul" />
-                <div className="auth-wrapper">
+                <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+                    <div class="wrapper wrapper--w680">
+                        <div class="card card-4">
+                            <div class="card-body">
+                                <h2 class="title">Your medical certificate</h2>
+                                <form>
+                                    <div class="row row-space">
+                                        <div class="col-2">
+                                            <div class="input-group">
+                                                <label>Name: </label>
+                                                <input id="price_to" className='inputCSS' value={this.props.name} disabled />
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="input-group">
+                                                <label>Age: </label>
+                                                <input id="price_to" className='inputCSS' value={this.props.age} disabled />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row row-space">
+                                        <div class="col-2">
+                                            <div class="input-group">
+                                                <label>Gender: </label>
+                                                <input id="price_to" className='inputCSS' value={this.props.gender} disabled />
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="input-group">
+                                                <label>Occupation: </label>
+                                                <input id="price_to" className='inputCSS' value={this.props.occupation} disabled />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row row-space">
+                                        <div class="col-2">
+                                            <div class="input-group">
+                                                <label>Blood pressure (mmHg) </label>
+                                                <input id="price_to" className='inputCSS' value="120/79" disabled />
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="input-group">
+                                                <label>Sugar Level (mg/dL) </label>
+                                                <input id="price_to" className='inputCSS' value="80" disabled />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row row-space">
+                                        <div class="col-2">
+                                            <label>Heart Rate (bpm) </label>
+                                            <input id="price_to" className='inputCSS' value="70" disabled />
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <label>Please write down any problems that you are facing</label>
+                                        <textarea id="subject" className='inputCSS' name="subject"
+                                            placeholder="Write something.."></textarea>
+                                    </div>
+                                    {/* occupation */}
+                                    <Button
+                                        action={this.onSubmitHandler}
+                                        type={'primary'}
+                                        title={'Submit'}
+                                        style={buttonStyle}
+                                    /> { /*Submit */}
 
-                    <h3>Your medical certificate</h3>
-                    <div className="auth-inner">
-                        <form className="container-fluid" >
-                        <label>Blood pressure </label>
-                        <input id="price_to" value="120/79mmHg" readonly="readOnly"/>
-                        <label>Sugar  </label>
-                        <input id="price_to" value="120/79mmHg" readonly="readonly"/>
-                        <label>Blood pressure </label>
-                        <input id="price_to" value="120/79mmHg" readonly="readonly"/>
-                        <label>Blood pressure </label>
-                        <input id="price_to" value="120/79mmHg" readonly="readonly"/>
-                        <label>Blood pressure </label>
-                        <input id="price_to" value="120/79mmHg" readonly="readonly"/>
-                        <label>Blood pressure </label>
-                        <input id="price_to" value="120/79mmHg" readonly="readonly"/>
-                            {/* occupation */}
-                            <Button
-                                action={this.onSubmitHandler}
-                                type={'primary'}
-                                title={'Submit'}
-                                style={buttonStyle}
-                            /> { /*Submit */}
-
-                            <Button
-                                type={'secondary'}
-                                title={'Clear'}
-                                style={buttonStyle}
-                            /> {/* Clear the form */}
-                        </form>
+                                    <Button
+                                        type={'secondary'}
+                                        title={'Clear'}
+                                        style={buttonStyle}
+                                    /> {/* Clear the form */}
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -17,15 +17,17 @@ class SignUpForm extends Component {
     super(props);
     console.log("signn")
     this.state = {
-        name: '',
-        age: '',
-        gender: '',
-        skills: [],
-        about: '',
+      name: '',
+      age: '',
+      gender: '',
+      skills: [],
+      about: '',
+      emailID:'',
+      occupation:'',
 
       genderOptions: ['Male', 'Female', 'Others'],
       skillOptions: ['Programming', 'Development', 'Design', 'Testing'],
-      occupationOptions: ['Doctor','Student','Lawyer','Others']
+      occupationOptions: ['Doctor', 'Student', 'Lawyer', 'Others']
 
     }
     // this.handleTextArea = this.handleTextArea.bind(this);
@@ -51,7 +53,7 @@ class SignUpForm extends Component {
 
   handleAge(e) {
     let value = e.target.value;
-    this.setState({age:value})
+    this.setState({ age: value })
   }
 
   // handleInput(e) {
@@ -62,9 +64,9 @@ class SignUpForm extends Component {
   // }
   handleChange = (e) => {
     this.setState({
-        [e.target.name]: e.target.value
+      [e.target.name]: e.target.value
     })
-}
+  }
 
   handleTextArea(e) {
     console.log("Inside handleTextArea");
@@ -104,72 +106,72 @@ class SignUpForm extends Component {
         name: '',
         age: '',
         gender: '',
-        occupation:'',
-        accountNO:'',
-        emailID:'',
-        pass:'',
-        accountNO:''
+        occupation: '',
+        accountNO: '',
+        emailID: '',
+        pass: '',
+        accountNO: ''
       },
     })
   }
 
   render() {
     console.log("11111111111")
-    console.log("router",this.props.location)
+    console.log("router", this.props.location)
     return (
       <div className="auth-wrapper">
         <div className="auth-inner">
           <form className="container-fluid">
 
             <h3>Sign Up</h3>
-          
+
             <div className="form-group">
-            <label>Enter your name</label>
-            <input type="text" className="form-control" placeholder="Full Name" name = "name"  onChange={e => this.handleChange(e)}/>
-          </div>
+              <label>Enter your name</label>
+              <input type="text" className="form-control" placeholder="Full Name" name="name" onChange={e => this.handleChange(e)} />
+            </div>
             {/* Name of the user */}
 
             {/* blockchain acccount number */}
             <div className="form-group">
-                            <label>Blockchain Account Number</label>
-                            <input type="text" className="form-control" placeholder="Enter Account Number" name = "accountNO"  onChange={e => this.handleChange(e)}/>
-                        </div>
+              <label>Blockchain Account Number</label>
+              <input type="text" className="form-control" placeholder="Enter Account Number" name="accountNO" onChange={e => this.handleChange(e)} />
+            </div>
             { /** Email of user */}
             <div className="form-group">
-                            <label>Email address</label>
-                            <input type="email" className="form-control" placeholder="Enter email" name = "email"  onChange={e => this.handleChange(e)}/>
-                        </div>
+              <label>Email address</label>
+              <input type="email" className="form-control" placeholder="Enter email" name="emailID" onChange={e => this.handleChange(e)} />
+            </div>
 
             { /** Password of user */}
             <div className="form-group">
-                            <label>Password</label>
-                            <input type="password" className="form-control" placeholder="Enter password" name = "pass"  onChange={e => this.handleChange(e)}/>
-                        </div>
-            
+              <label>Password</label>
+              <input type="password" className="form-control" placeholder="Enter password" name="pass" onChange={e => this.handleChange(e)} />
+            </div>
 
-              {/* Age */}
-               <div className="form-group">
-                            <label>Age</label>
-                            <input type="number" className="form-control" placeholder="Enter your age" name = "age"  onChange={e => this.handleChange(e)}/>
-                        </div>
 
-                        <label>Select a gender</label>
-        <select
-		      id = 'gender'
-		      name='gender'
-		      value={this.state.gender}
-		      onChange={e => this.handleChange(e)}
-		      className="form-control">
-		      <option value="" disabled>Select Gender</option>
-		      {this.state.genderOptions.map(option => {
-		        return (
-		          <option
-		            key={option}
-		            value={option}
-		            label={option}>{option}</option>
-		        );
-		      })}
-		    </select>
+            {/* Age */}
+            <div className="form-group">
+              <label>Age</label>
+              <input type="number" className="form-control" placeholder="Enter your age" name="age" onChange={e => this.handleChange(e)} />
+            </div>
+
+            <label>Select a gender</label>
+            <select
+              id='gender'
+              name='gender'
+              value={this.state.gender}
+              onChange={e => this.handleChange(e)}
+              className="form-control">
+              <option value="" disabled>Select Gender</option>
+              {this.state.genderOptions.map(option => {
+                return (
+                  <option
+                    key={option}
+                    value={option}
+                    label={option}>{option}</option>
+                );
+              })}
+            </select>
 
             {/* <Select title={'Gender'}
               name={'gender'}
@@ -178,23 +180,23 @@ class SignUpForm extends Component {
               placeholder={'Select Gender'}
               handleChange={() =>this.handleInput}
             /> Age Selection */}
-        <label>Select an occupation</label>
-        <select
-		      id = 'Occupation'
-		      name='Occupation'
-		      value={this.state.occupation}
-		      onChange={e => this.handleChange(e)}
-		      className="form-control">
-		      <option value="" disabled>Select an Occupation</option>
-		      {this.state.occupationOptions.map(option => {
-		        return (
-		          <option
-		            key={option}
-		            value={option}
-		            label={option}>{option}</option>
-		        );
-		      })}
-		    </select>
+            <label>Select an occupation</label>
+            <select
+              id='Occupation'
+              name='Occupation'
+              value={this.state.occupation}
+              onChange={e => this.handleChange(e)}
+              className="form-control">
+              <option value="" disabled>Select an Occupation</option>
+              {this.state.occupationOptions.map(option => {
+                return (
+                  <option
+                    key={option}
+                    value={option}
+                    label={option}>{option}</option>
+                );
+              })}
+            </select>
 
             {/* <Select title={'Occupation'}
               name={'Occupation'}
@@ -204,14 +206,13 @@ class SignUpForm extends Component {
               handleChange={() =>this.handleInput}
             />
             occupation */}
-             <button type="submit"
-                            className="btn btn-secondary"
-                            onClick={() => this.props.signup(this.state.age,
-                              this.state.name,this.state.emailID,
-                              this.state.pass,this.state.accountNO,
-                              this.state.gender,this.state.occupation
-                              )}
-                            >Submit
+            <button type="submit"
+              className="btn btn-secondary"
+              onClick={(event) => this.props.signup(this.state.age,
+                this.state.name, this.state.emailID,
+                this.state.pass, this.state.accountNO,
+                this.state.gender, this.state.occupation, event)}
+            >Submit
                             </button>
             <Button
               action={this.handleClearForm}
@@ -219,7 +220,7 @@ class SignUpForm extends Component {
               title={'Clear'}
               style={buttonStyle}
             /> {/* Clear the form */}
-            
+
             <Button
               action={() => history.push('/')}
               type={'secondary'}
