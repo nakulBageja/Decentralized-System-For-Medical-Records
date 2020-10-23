@@ -1,8 +1,6 @@
 # Decentralized System for medical records
 > A blockchain based medical service to help you keep your medical documents secure and help you tranfer your medical records (heart beats, blood pressure etc) to the doctor.
 
-One to two paragraph statement about your product and what it does.
-
 ![](header.png)
 
 ## Installation
