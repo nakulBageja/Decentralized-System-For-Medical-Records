@@ -4,18 +4,18 @@
 ![](header.png)
 
 ## Installation
-
-OS X & Linux:
-
-```sh
-npm install my-crazy-module --save
-```
-
-Windows:
-
-```sh
-edit autoexec.bat
-```
+ - CLONE THE REPOSITORY
+ - NOW INSTALL ALL THE DEPENDENCIES FOR THE PROJECT
+  
+  ```bash
+    npm install
+  ```
+  
+ - RUN THE REACT APPLICATION
+ 
+  ```bash
+    npm run start
+  ```
 
 ## Usage example
 
