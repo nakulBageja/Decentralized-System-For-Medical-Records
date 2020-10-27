@@ -17,7 +17,7 @@
  ## Here we can see screenshots of the project
  
  - HERE WE ARE CONNECTING WITH METAMASK ON FIRST COMING ON THE WEBSITE
-![](Picture1.png =100x20)
+![](Picture1.png=100x20)
  - AFTER SIGNING UP WE ARE FILLING UP THE FORM AND SUBMITTING IT
  - ON SUBMITTING WE WILL HAVE TO SEND IT AS A TRANSACTION TO IPFS 
  - THUS CONFIRMING THE TRANSACTION
@@ -40,4 +40,3 @@
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
 
-![](Picture1.png =100x20)
