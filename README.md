@@ -17,14 +17,14 @@
  ## Here we can see screenshots of the project
  
  - HERE WE ARE CONNECTING WITH METAMASK ON FIRST COMING ON THE WEBSITE
- ![](Picture1.png=100x20)
+ ![](Picture1.png)
  - AFTER SIGNING UP WE ARE FILLING UP THE FORM AND SUBMITTING IT
  - ON SUBMITTING WE WILL HAVE TO SEND IT AS A TRANSACTION TO IPFS 
  - THUS CONFIRMING THE TRANSACTION
- ![](Picture2.png =100x20)
+ ![](Picture2.png)
  - THE DOCTOR CAN THEN INSTALL THE PDF GENERATED 
  - WILL BE SHOWN LIKE THIS
- ![](Picture3.png =100x20)
+ ![](Picture3.png)
 
 ## Release History
 
@@ -34,7 +34,7 @@
 
 ## Contributing
 
-1. Fork it (<https://github.comketonium10/Decentralized-System-For-Medical-Records>)
+1. Fork it (<https://github.com/ketonium10/Decentralized-System-For-Medical-Records/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
