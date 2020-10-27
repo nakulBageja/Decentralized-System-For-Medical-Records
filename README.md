@@ -14,10 +14,17 @@
   ```bash
     npm run start
   ```
-  
-![](Picture1.png)
-![](Picture2.png)
-![](Picture3.png)
+ ## Here we can see screenshots of the project
+ 
+ - HERE WE ARE CONNECTING WITH METAMASK ON FIRST COMING ON THE WEBSITE
+![](Picture1.png =100x20)
+ - AFTER SIGNING UP WE ARE FILLING UP THE FORM AND SUBMITTING IT
+ - ON SUBMITTING WE WILL HAVE TO SEND IT AS A TRANSACTION TO IPFS 
+ - THUS CONFIRMING THE TRANSACTION
+![](Picture2.png =100x20)
+ - THE DOCTOR CAN THEN INSTALL THE PDF GENERATED 
+ - WILL BE SHOWN LIKE THIS
+![](Picture3.png =100x20)
 
 ## Release History
 
