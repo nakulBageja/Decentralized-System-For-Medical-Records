@@ -13,7 +13,7 @@
     "history": "^5.0.0",
     "ipfs-api": "^26.1.2",
     "ipfs-http-client": "^44.1.1",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.3.1",
     "mocha": "^8.0.1",
     "nodemailer": "^6.4.10",
     "react": "^16.13.1",
